@@ -1,6 +1,6 @@
 !["preview"](preview.PNG?raw=true)
 
-Return Link Messages (RLM) decoder for COSPAS-SARSAT system. It decodes Galileo RLM and QZSS Reports for disaster and crisis management (DC Reports).
+Galileo RLM (Return Link Messages) decoder for COSPAS-SARSAT system and DC Reports (Reports for disaster and crisis management) decoder for QZSS.
 
 Requirements
 ==========
