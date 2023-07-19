@@ -18,10 +18,10 @@ Usage
 ```
 python gnss_addinfo_decoder.py serialport
 
-python gnss_addinfo_decoder.py -h   /for additional settings/
+python gnss_addinfo_decoder.py -h   /for additional options/
 ```
 - Port baud rate - 19200.
-- If running with a parameter `----autoconf`, the decoder will attempt to autoconfigure the receiver (saving all settings to flash memory), but additional configuration may be required.
+- If running with a parameter `--autoconf`, the decoder will attempt to autoconfigure the receiver (saving all settings to flash memory), but additional configuration may be required.
 - Please make sure that Galileo and QZSS (L1SAIF signal) signals reception is enabled. Also make sure that UBX-RXM-RLM, UBX-RXM-SFRBX and UBX-NAV-SAT messages output is enabled as well.
 - The tables are automatically updated after each new message, use Ctrl+С to quit.
 
