@@ -4,7 +4,7 @@ Return Link Messages (RLM) decoder for COSPAS-SARSAT system. It decodes Galileo 
 
 Requirements
 ==========
-— U-blox M8 receiver (3.01 firmware version) or a newer model that supports UBX-RXM-RLM and UBX-RXM-SFRBX messages output and receiving QZSS L1SAIF.
+- U-blox M8 receiver (3.01 firmware version) or a newer model that supports UBX-RXM-RLM and UBX-RXM-SFRBX messages output and receiving QZSS L1SAIF.
 
 Dependencies
 ===========
@@ -19,10 +19,10 @@ Usage
 python gnss_addinfo_decoder.py COM-port
 python gnss_addinfo_decoder.py -h for additional settings
 ```
-— Port baud rate - 38400.
-— If running with a parameter `----autoconf`, the decoder will attempt to autoconfigure the receiver (saving all settings to flash memory), but additional configuration may be required.
-— Please make sure that Galileo and QZSS (L1SAIF signal) signals reception is enabled. Also make sure that UBX-RXM-RLM, UBX-RXM-SFRBX and UBX-NAV-SAT messages output is enabled as well.
-— The tables are automatically updated after each new message, use Ctrl+С to quit.
+- Port baud rate - 38400.
+- If running with a parameter `----autoconf`, the decoder will attempt to autoconfigure the receiver (saving all settings to flash memory), but additional configuration may be required.
+- Please make sure that Galileo and QZSS (L1SAIF signal) signals reception is enabled. Also make sure that UBX-RXM-RLM, UBX-RXM-SFRBX and UBX-NAV-SAT messages output is enabled as well.
+- The tables are automatically updated after each new message, use Ctrl+С to quit.
 
 Additional information
 =========================
