@@ -422,7 +422,7 @@ def gen_table() -> Table:
     dcr_table.add_column("RECEIPT TIME", header_style="sea_green2", justify="center")
     dcr_table.add_column("SAT", header_style="gold3", justify="center")
     dcr_table.add_column("PRIORITY", header_style="blue", justify="center", min_width=3)
-    dcr_table.add_column("CATEGOTY", header_style="magenta", justify="center", min_width=7)
+    dcr_table.add_column("CATEGORY", header_style="magenta", justify="center", min_width=7)
     dcr_table.add_column("REPORT TIME", header_style="sea_green2", justify="center",min_width=11)
     dcr_table.add_column("INFO TYPE", header_style="gold3", justify="center")
     dcr_table.add_column("INFO", header_style="blue", justify="center",min_width=25)
@@ -473,8 +473,8 @@ if args.autoconf:
         print('set params...')
     serialout.close()
 
-#stream = open('out2.ubx', 'rb')
-stream = Serial(args.serialport, 19200, timeout=30)
+#stream = open('out.ubx', 'rb')
+stream = Serial(args.serialport, 38400, timeout=30)
 
 with Live(gen_table(), auto_refresh=False) as live:
     ubr = UBXReader(stream, protfilter=2)
