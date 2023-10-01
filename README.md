@@ -10,7 +10,7 @@ Dependencies
 ===========
 
 ```
-pip install pyubx2 rich bitstring 
+pip install pyserial pyubx2 rich bitstring 
 ```
 
 Usage
