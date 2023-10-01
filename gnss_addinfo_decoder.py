@@ -458,7 +458,7 @@ def gen_table() -> Table:
 
 if args.autoconf:
     msg_list = []
-    serialout = Serial(args.serialport, 19200, timeout=10)
+    serialout = Serial(args.serialport, 38400, timeout=10)
     msg_list.append(UBXMessage('CFG','CFG-GNSS', SET, msgVer=0, numTrkChHw=0, numTrkChUse=255, numConfigBlocks=7, gnssId_01=0, resTrkCh_01=4, maxTrkCh_01=4, reserved0_01=0, enable_01=1, sigCfMask_01=1, gnssId_02=1, resTrkCh_02=0, maxTrkCh_02=0, reserved0_02=0, enable_02=0, sigCfMask_02=1, gnssId_03=2, resTrkCh_03=10, maxTrkCh_03=10, reserved0_03=0, enable_03=1, sigCfMask_03=1, gnssId_04=3, resTrkCh_04=0, maxTrkCh_04=0, reserved0_04=0, enable_04=0, sigCfMask_04=1, gnssId_05=4, resTrkCh_05=0, maxTrkCh_05=0, reserved0_05=0, enable_05=0, sigCfMask_05=1, gnssId_06=5, resTrkCh_06=4, maxTrkCh_06=4, reserved0_06=0, enable_06=1, sigCfMask_06=5, gnssId_07=6, resTrkCh_07=0, maxTrkCh_07=0, reserved0_07=0, enable_07=0, sigCfMask_07=1))
     msg_list.append(UBXMessage('CFG', 'CFG-MSG', SET, msgClass=0x02, msgID=0x59, rateDDC=0, rateUART1=1, rateUART2=0, rateUSB=1, rateSPI=0, reserved=0))
     msg_list.append(UBXMessage('CFG', 'CFG-MSG', SET, msgClass=0x02, msgID=0x13, rateDDC=0, rateUART1=1, rateUART2=0, rateUSB=1, rateSPI=0, reserved=0))
