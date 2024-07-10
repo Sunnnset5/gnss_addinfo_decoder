@@ -29,4 +29,4 @@ Additional information
 
 - [COSPAS-SARSAT](https://cospas-sarsat.int/en/pro)
 - [Galileo SAR](https://www.gsc-europa.eu/galileo/services/search-and-rescue-sar-galileo-service)
-- [DCR Interface Specification](https://qzss.go.jp/en/technical/ps-is-qzss/is_qzss_dcr_010_agree.html)
+- [DCR Interface Specification](https://qzss.go.jp/en/technical/ps-is-qzss/ps-is-qzss.html)
